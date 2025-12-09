@@ -1,4 +1,5 @@
 import tkinter as tk
+from program_functions.calculator import abrirCalculadora
 
 def abrirMenu(janelaPrincipal):
     janelaPrincipal.withdraw()
@@ -10,7 +11,7 @@ def abrirMenu(janelaPrincipal):
     textoEscolhaOpcao = tk.Label(janelaMenu, text="Escolha uma opção abaixo:")
     textoEscolhaOpcao.grid(row=0, column=0, padx=10, pady=10)
 
-    botaoCalculadora = tk.Button(janelaMenu, text="Calculadora")
+    botaoCalculadora = tk.Button(janelaMenu, text="Calculadora", command=lambda: abrirCalculadora(janelaMenu))
     botaoCalculadora.grid(row=1, column=0, padx=10, pady=10)
 
     botaoSobre = tk.Button(janelaMenu, text="Sobre")
