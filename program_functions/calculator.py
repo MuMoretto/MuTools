@@ -39,3 +39,18 @@ def abrirCalculadora(janelaMenu):
 
     botao0 = tk.Button(janelaCalculadora, text="0")
     botao0.grid(row=5, column=3, padx=10, pady=10)
+
+    botaoAdicao = tk.Button(janelaCalculadora, text="+")
+    botaoAdicao.grid(row=5, column=4, padx=10, pady=10)
+
+    botaoSubtracao = tk.Button(janelaCalculadora, text="-")
+    botaoSubtracao.grid(row=5, column=5, padx=10, pady=10)
+
+    botaoMultiplicacao = tk.Button(janelaCalculadora, text="X")
+    botaoMultiplicacao.grid(row=6, column=3, padx=10, pady=10)
+
+    botaoDivisao = tk.Button(janelaCalculadora, text="/")
+    botaoDivisao.grid(row=6, column=4, padx=10, pady=10)
+
+    botaoCalcular = tk.Button(janelaCalculadora, text="Calcular")
+    botaoCalcular.grid(row=6, column=5, padx=10, pady=10)
